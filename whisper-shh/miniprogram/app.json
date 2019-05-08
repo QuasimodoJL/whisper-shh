@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/me",
+    "pages/post/post",
+    "pages/myPosts/myPosts",
+    "pages/message/message",
+    "pages/setting/setting",
+    "pages/about/about",
+    "pages/report/report",
+    "pages/reportpage/reportpage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#9370DB",
+    "navigationBarTitleText": "Whisper Shh",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#9370DB",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/community-fill.png",
+        "iconPath": "images/community.png",
+        "pagePath": "pages/index/index",
+        "text": "Whisper"
+      },
+      {
+        "selectedIconPath": "images/plus-fill.png",
+        "iconPath": "images/plus.png",
+        "pagePath": "pages/post/post",
+        "text": "Post Message"
+      },
+      {
+        "selectedIconPath": "images/user-fill.png",
+        "iconPath": "images/user.png",
+        "pagePath": "pages/me/me",
+        "text": "Me"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,32 @@
+<view class='container'>
+  <view class='content'>
+    <textarea class='input-textarea' placeholder='Say something...' bindinput='handleMessage'></textarea>
+    <button class='uploadPic' hover-class='uploadPic-hover' bindtap='uploadPic'>
+      <image class='uploadPic-icon' src='{{imgUrl}}'></image>
+    </button>
+    <input class='nickname-input' placeholder='Nickname' placeholder-class='ph-class' bindinput='handleNickName'></input>
+  </view>
+
+  <view class='tag'>
+    <view class='tag-head'>
+      <text>Add tag</text>
+    </view>
+    <view class='tag-row'>
+      <button class="{{isLove?'tag-love-selected':'tag-love'}}" bindtap='selectLove' hover-class='tag-button-hover'>
+        <image class='tag-icon' src='/images/hash-red.png'></image>Love</button>
+      <button class="{{isLife?'tag-life-selected':'tag-life'}}" bindtap='selectLife' hover-class='tag-button-hover'>
+        <image class='tag-icon' src='/images/hash-yellow.png' ></image>Life</button>
+      <button class="{{isGame?'tag-game-selected':'tag-game'}}" bindtap='selectGame' hover-class='tag-button-hover'>
+        <image class='tag-icon' src='/images/hash-green.png'></image>Game</button>
+    </view>
+    <view class='tag-row'>
+      <button class="{{isStudy?'tag-study-selected':'tag-study'}}" bindtap='selectStudy' hover-class='tag-button-hover'>
+        <image class='tag-icon' src='/images/hash-blue.png'></image>Study</button>
+      <button class="{{isNo?'tag-no-selected':'tag-no'}}" bindtap='selectNo' hover-class='tag-button-hover'>
+        <image class='tag-icon' src='/images/hash-grey.png'></image>noTag</button>
+    </view>
+  </view>
+  <view class='send' bindtap='leaveMessage'>
+    <button class='send-button' hover-class='send-button-hover'>Send</button>
+  </view>
+</view>
